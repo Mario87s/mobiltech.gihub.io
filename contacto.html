@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Necesario para el diseño web responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página -->
+    <title>MobiTech Solutions</title>
+    <!-- enlzar con el favicon  -->
+     <link rel="shortcut icon" href="imagenesdemo/favicon (2).ico" type="image/x-icon">
+    <!-- Vinculación a la hoja de estilos externa -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Barra superior -->
+    <header id="top-bar">
+        <div class="container-bar">
+            <div class="info-section">
+                <a href="tel:917326384"><i class="fa-solid fa-phone"></i> +51 917326384</a>
+                <a href="mailto:oscardelaross@gmail.com"><i class="fa-solid fa-envelope"></i> mobitech@gmail.com</a>
+                <span><i class="fa-solid fa-clock"></i> Lun - Sab: 8:00 a.m. a 6:30 p.m.</span>
+            </div>
+            <div class="social-icons">
+                <a title="Síguenos en Facebook" href="https://www.facebook.com/ifamobileperu" target="_blank"><i class="fa-brands fa-facebook icon-social"></i></a>
+                <a title="Síguenos en Instagram" href="https://www.instagram.com/gsmstorevzla/" target="_blank"><i class="fa-brands fa-instagram icon-social"></i></a>
+                <a title="Síguenos en LinkedIn" href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin icon-social"></i></a>
+                <a title="Síguenos en Youtube" href="https://www.youtube.com/@Tecgn" target="_blank"><i class="fa-brands fa-youtube icon-social"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecera con barra de navegación -->
+    <header id="cabecera">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                 <img src="imagenesdemo/logo.png" alt="mobiletech" class="imgfluid">
+                </a>
+            </div>
+            <!-- lista de menu para la navegacion  -->
+            <ul>
+                <li><a href="index.html"> <i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li><a href="servicios.html"> <i class="fa-solid fa-screwdriver-wrench"></i> Servicios</a></li>
+                <li><a href="portafolio.html"> <i class="fa-solid fa-folder"></i> Portafolio</a></li>
+                <li><a  href="blog.html"> <i class="fa-solid fa-pencil"></i> Blog</a></li>
+                <li><a class="pagina-activa" href="contacto.html"> <i class="fa-solid fa-phone"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- titulo de paginas internas  -->
+<section id="titulo-pagina" class="espaciado fondo-proyectos">
+    <div class="capitulo">
+        <h2>Contacto</h2>
+        <span><i class="fa-solid fa-location-dot"></i><a href="index.html"> Inicio</a> / 
+            contacto</span>
+    </div>
+</section>
+<section id="contacto-formulario" class="espaciado">
+    <div class="contenedor">
+        <h2>Contáctanos por whatsapp o formulario 
+            Respondemos todas las solicitudes</h2>
+
+        <div class="row del-padded">
+            <div class="col col-66">
+                <!-- objeto formulario  -->
+                 <form action="registrar.php" class="form-contacto" method="post">
+                    <div class="row del-padded">
+                        <div class="col col-50">
+                            <input type="text" placeholder="Nombre" name="nombre" id="nombre" 
+                            required class="formar">
+                        </div>
+
+                        <div class="col col-50">
+                            <input type="text" placeholder="Apellido" name="apellido" id="apellido" 
+                            required class="formar">
+                        </div>
+
+                        <div class="col col-50">
+                            <input type="email" placeholder="Correo electronico" name="correo" id="correo" 
+                            required class="formar">
+                        </div>
+                        <div class="col col-50">
+                            <input type="tel" placeholder="Teléfono" name="telefono" id="telefono" 
+                            required class="formar">
+                        </div>
+                        <div class="col col-100">
+                            <textarea name="mensaje" id="mensaje" placeholder="Mensaje" 
+                            required rows="5" class="formar"></textarea>
+                        </div>
+
+                        <div class="col col-100">
+                            <input type="text" name="captcha" id="captcha" placeholder="Captcha: 3 + 4 = ?" 
+                            required class="formar"> 
+                        </div>
+
+                        <div class="col col-100">
+                            <input type="checkbox" required id="acuerdo">
+                            <label for="acuerdo">
+                                He leido y acepto los <a target="_blank" href="https://es.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy">términos y condiciones</a> de privacidad
+                                acerca del uso de mis datos personales.
+                            </label>
+                        </div>
+                        <div class="col col-100">
+                            <button type="submit" class="formar-boton">Enviar mensaje <i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                 </form>
+
+            </div>
+            <div class="diseño col">
+                <div>
+                    <h2><i class="fa-solid fa-location-dot"></i> Ubicacion</h2>
+                    <p>Av. abancay 725</p>
+                    <p>Av. Wilson 324</p>
+                </div>
+                <div>
+                    <h2><i class="fa-solid fa-envelope"></i> Correo</h2>
+                    <p>juantino@gmail.com</p>
+                    <p>oscardelaross@gmail.com</p>
+                </div>
+                <div>
+                    <h2><i class="fa-solid fa-phone"></i> Contacto</h2>
+                    <p>Lima -917326384</p>
+                    <p>Provincia - 912345677</p>
+                </div>
+                <div>
+                    <h2><i class="fa-solid fa-clock"></i> Atencion</h2>
+                    <p>lunes - sabados </p>
+                    <p>8 am - 6:30 pm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="redes-mapa" class="espaciado">
+    <!-- Redes Sociales -->
+    <div class="redes">
+        <div class="columna">
+            <a title="Síguenos en Facebook" href="https://www.facebook.com/ifamobileperu" target="_blank">
+                <i class="fa-brands fa-facebook icono-rs"></i> Facebook
+            </a>
+        </div>
+        <div class="columna">
+            <a title="Síguenos en Instagram" href="https://www.instagram.com/gsmstorevzla/" target="_blank">
+                <i class="fa-brands fa-instagram icono-rs"></i> Instagram
+            </a>
+        </div>
+        <div class="columna">
+            <a title="Síguenos en YouTube" href="https://www.youtube.com/@Tecgn" target="_blank">
+                <i class="fa-brands fa-youtube icono-rs"></i> YouTube
+            </a>
+        </div>
+        <div class="columna">
+            <a title="Síguenos en LinkedIn" href="https://www.linkedin.com/feed/" target="_blank">
+                <i class="fa-brands fa-linkedin icono-rs"></i> LinkedIn
+            </a>
+        </div>
+    </div>
+
+    <!-- Mapa de ubicación -->
+
+    <section>  
+        <div id="mapa">
+            <iframe class="imgfluid" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3901.8681450157046!2d-77.028791!3d-12.052592!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1731570263660!5m2!1ses-419!2spe" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>     
+    </section>
+
+    <!-- Pie de página -->
+    <!-- Protección de derechos de la empresa y las normativas legales. -->
+    <footer id="pie" class="espaciado">
+        <div class="contenedorpie">
+            <div class="row">
+                <span>&copy; Copyright y politicas de privacidad</span>
+                <div>
+                    <a title="Síguenos en Facebook" href="https://www.facebook.com/UTP.Peru/" target="_blank"><i class="fa-brands fa-facebook icono-rs"></i></a>
+                    <a title="Síguenos en Instagram" href="https://www.instagram.com/universidadutp/" target="_blank"><i class="fa-brands fa-instagram icono-rs"></i></a>
+                    <a title="Síguenos en Youtube" href="https://www.youtube.com/channel/UCLQEBv7WN0SgOFD_nRLraRQ" target="_blank"><i class="fa-brands fa-youtube icono-rs"></i></a>
+              </div>
+           </div>
+        </div>
+    </footer>
+    <!-- boton para relizar el scroll up  -->
+     <a href="#" class="scroll">
+        <i class="fa-solid fa-angle-up"></i>
+     </a>
+</body>
+</html>
